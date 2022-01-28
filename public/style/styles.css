@@ -4,6 +4,15 @@
   box-sizing: border-box;
 }
 
+html {
+  background-color: #031a40;
+}
+.container {
+  background-color: #031a40;
+}
+body {
+}
+
 .main-container {
   display: flex;
   flex-direction: row;
@@ -12,12 +21,38 @@
 }
 .pageContainer {
   display: flex;
+  background-color: #031a40;
 }
 
+.navigation-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+}
+
+.navigation__menu {
+  color: #fff;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+}
+.card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
 .poke-card {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 150px;
+  height: 200px;
   align-items: center;
   background-color: #05275e;
   border: 3px solid black;

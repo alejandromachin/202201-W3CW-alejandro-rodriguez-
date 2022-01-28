@@ -1,7 +1,7 @@
 import PageComponent from "./components/PageComponent/PageComponent.js";
 import PokeComponent from "./components/PokeComponent/PokeComponent.js";
 
-const divContainer = document.querySelector(".container");
+const divContainer = document.querySelector(".container-fluid");
 
 new PageComponent(divContainer);
 
