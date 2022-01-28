@@ -7,4 +7,5 @@ new PageComponent(divContainer);
 
 const pageContainer = document.querySelector(".pageContainer");
 
+// eslint-disable-next-line no-unused-vars
 const pokeCard = new PokeComponent(pageContainer, "poke-card");
