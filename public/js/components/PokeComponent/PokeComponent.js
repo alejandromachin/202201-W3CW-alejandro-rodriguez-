@@ -11,7 +11,7 @@ class PokeComponent extends Component {
   }
 
   generateHTML() {
-    this.element.innerHTML = `<img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt=""> <ul><li>NOMBRE:</li><li>INFO:</li></ul>`;
+    this.element.innerHTML = `<img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt=""> <div class="info-container"><ul><li>NOMBRE:</li><li>INFO:</li></ul></div>`;
   }
 }
 

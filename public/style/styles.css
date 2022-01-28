@@ -1,1 +1,39 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
 
+.main-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.pageContainer {
+  display: flex;
+}
+
+.poke-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #05275e;
+  border: 3px solid black;
+}
+.info-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.poke-card ul {
+  color: #fff;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  list-style-type: none;
+}
