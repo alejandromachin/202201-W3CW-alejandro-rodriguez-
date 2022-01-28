@@ -7,6 +7,18 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky install"
   },
+  "jest": {
+    "testEnvironment": "jsdom"
+  },
+  "babel": {
+    "env": {
+      "test": {
+        "plugins": [
+          "@babel/plugin-transform-modules-commonjs"
+        ]
+      }
+    }
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/alejandromachin/202201-W3CW-alejandro-rodriguez-.git"
