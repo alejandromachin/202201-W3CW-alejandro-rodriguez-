@@ -15,3 +15,5 @@ class CardButtonComponent extends Component {
     this.element.textContent = this.text;
   }
 }
+
+export default CardButtonComponent;
