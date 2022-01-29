@@ -36,12 +36,18 @@ class PreviewCardComponent extends Component {
         ".poke-card__button-container"
       );
 
-      new CardButtonComponent(buttonContainer, "button--more-info", () => {
-        console.log("more info");
-      });
-      new CardButtonComponent(buttonContainer, "button--add-list", () => {
-        console.log("CATCH");
-      });
+      new CardButtonComponent(
+        buttonContainer,
+        "button--more-info",
+        () => {},
+        "MORE INFO"
+      );
+      new CardButtonComponent(
+        buttonContainer,
+        "button--add-list",
+        () => {},
+        "CATCH IT"
+      );
     })();
   }
 }
