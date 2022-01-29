@@ -28,8 +28,12 @@ class PreviewCardComponent extends Component {
     (async () => {
       const pokemonObject = await getPokemonCardInfo(this.url);
 
-      this.element.innerHTML = `<img src="${pokemonObject.sprites.front_default}" alt="">
-  <div class="${this.element.className}__info"> Name: ${pokemonObject.forms[0].name}</div>
+      this.element.innerHTML = `<img src="${
+        pokemonObject.sprites.front_default
+      }" alt="">
+  <div class="${
+    this.element.className
+  }__info"> ${pokemonObject.forms[0].name.toUpperCase()}</div>
   <div class="${this.element.className}__button-container"></div>`;
 
       const buttonContainer = this.element.querySelector(
@@ -38,13 +42,13 @@ class PreviewCardComponent extends Component {
 
       new CardButtonComponent(
         buttonContainer,
-        "button--more-info",
+        "button button--more-info",
         () => {},
         "MORE INFO"
       );
       new CardButtonComponent(
         buttonContainer,
-        "button--add-list",
+        "button button--add-list",
         () => {},
         "CATCH IT"
       );
