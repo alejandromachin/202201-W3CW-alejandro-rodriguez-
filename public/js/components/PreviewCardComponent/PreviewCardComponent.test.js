@@ -12,8 +12,6 @@ describe("Given a PreviewCardComponent", () => {
         pokemon
       );
 
-      debugger;
-
       expect(previewCard.element.textContent).toMatch(pokemon.name);
     });
   });
