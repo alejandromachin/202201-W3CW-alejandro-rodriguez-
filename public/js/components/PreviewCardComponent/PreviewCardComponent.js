@@ -17,9 +17,22 @@ class PreviewCardComponent extends Component {
   }
 
   generateHTML() {
-    this.element.innerHTML = `<img src="" alt="${this.name}">
-    <div class="${this.element.className}__info"> Name: ${this.name}</div> 
-    <div class="${this.element.className}__button-container"></div>`;
+    console.log(this.url);
+
+    async function getPokemonCardInfo(url) {
+      const pokemonCardInfo = await fetch(url);
+      const objectCardInfo = await pokemonCardInfo.json();
+
+      return objectCardInfo;
+    }
+
+    (async () => {
+      const pokemonObject = await getPokemonCardInfo(this.url);
+
+      this.element.innerHTML = `<img src="${pokemonObject.sprites.front_default}" alt="">
+  <div class="${this.element.className}__info"> Name: ${pokemonObject.forms[0].name}</div>
+  <div class="${this.element.className}__button-container"></div>`;
+    })();
   }
 }
 
