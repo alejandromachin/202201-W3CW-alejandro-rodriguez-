@@ -16,6 +16,7 @@ async function getPokemonInfo() {
 
   return pokemonArray;
 }
+
 (async () => {
   const pokemonArray = await getPokemonInfo();
 
