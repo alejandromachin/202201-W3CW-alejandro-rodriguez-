@@ -16,7 +16,7 @@ class PageComponent extends Component {
         </ul>
       </div>
     </header>
-    <div class="card-container col-12"></div>
+    <div><div class="card-container col-12"></div><div class="page-jump"></div></div>
     <footer class="footer col-12"></footer>
     `;
   }
