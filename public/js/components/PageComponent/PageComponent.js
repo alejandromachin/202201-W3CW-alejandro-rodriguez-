@@ -21,5 +21,4 @@ class PageComponent extends Component {
     `;
   }
 }
-
 export default PageComponent;

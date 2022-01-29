@@ -9,6 +9,24 @@ new PageComponent(divContainer);
 const pageContainer = document.querySelector(".card-container");
 // eslint-disable-next-line no-unused-vars
 const pokeCard = new PokeComponent(pageContainer, "poke-card");
-const pokemon = { name: "Bulbasaul" };
+
 // eslint-disable-next-line no-unused-vars
-const card = new PreviewCardComponent(pageContainer, "poke-card", pokemon);
+// const card = new PreviewCardComponent(pageContainer, "poke-card", pokemon);
+
+async function getPokemonInfo() {
+  const pokemonInfo = await fetch("https://pokeapi.co/api/v2/pokemon/");
+  const object = await pokemonInfo.json();
+  const nextObject = object.next;
+  const pokemonArray = [object.results, nextObject];
+
+  return pokemonArray;
+
+  // return gifUrl;
+}
+(async () => {
+  const pokemonArray = await getPokemonInfo();
+
+  pokemonArray[0].forEach((pokemon) => {
+    new PreviewCardComponent(pageContainer, "poke-card", pokemon);
+  });
+})();
