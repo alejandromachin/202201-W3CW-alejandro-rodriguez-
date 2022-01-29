@@ -9,6 +9,7 @@ class CardButtonComponent extends Component {
     this.actionOnClick = actionOnClick;
     this.text = text;
     this.generateHTML();
+    this.addListeners();
   }
 
   generateHTML() {
