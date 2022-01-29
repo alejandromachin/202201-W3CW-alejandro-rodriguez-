@@ -1,5 +1,4 @@
 import Component from "../Component.js";
-import PreviewCardComponent from "../PreviewCardComponent/PreviewCardComponent.js";
 
 class PageComponent extends Component {
   constructor(parentElement) {
@@ -22,23 +21,4 @@ class PageComponent extends Component {
     `;
   }
 }
-async function getPokemonInfo() {
-  const pokemonInfo = await fetch("https://pokeapi.co/api/v2/pokemon/");
-  const object = await pokemonInfo.json();
-  const nextObject = object.next;
-  const pokemonArray = [object.results, nextObject];
-
-  return pokemonArray;
-
-  // return gifUrl;
-}
-(async () => {
-  const prueba = await getPokemonInfo();
-  return prueba;
-
-  prueba[0].forEach((prueba) => {
-    new PreviewCardComponent(pageContainer);
-  });
-})();
-
 export default PageComponent;

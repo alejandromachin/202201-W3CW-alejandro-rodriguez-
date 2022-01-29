@@ -24,9 +24,9 @@ async function getPokemonInfo() {
   // return gifUrl;
 }
 (async () => {
-  const prueba = await getPokemonInfo();
+  const pokemonArray = await getPokemonInfo();
 
-  prueba[0].forEach((prueb) => {
-    new PreviewCardComponent(pageContainer, "poke-card", prueb);
+  pokemonArray[0].forEach((pokemon) => {
+    new PreviewCardComponent(pageContainer, "poke-card", pokemon);
   });
 })();
