@@ -14,6 +14,10 @@ class CardButtonComponent extends Component {
   generateHTML() {
     this.element.textContent = this.text;
   }
+
+  addListeners() {
+    this.element.addEventListener("click", this.actionOnClick);
+  }
 }
 
 export default CardButtonComponent;
