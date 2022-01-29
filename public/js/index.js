@@ -1,3 +1,4 @@
+import CardButtonComponent from "./components/CardButtonComponent/CardButtonComponent.js";
 import PageComponent from "./components/PageComponent/PageComponent.js";
 // import PokeComponent from "./components/PokeComponent/PokeComponent.js";
 import PreviewCardComponent from "./components/PreviewCardComponent/PreviewCardComponent.js";
@@ -16,6 +17,7 @@ async function getPokemonInfo() {
 
   return pokemonArray;
 }
+
 (async () => {
   const pokemonArray = await getPokemonInfo();
 
