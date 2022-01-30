@@ -31,7 +31,7 @@ class PreviewCardComponent extends Component {
       this.element.innerHTML = `<img src="${
         pokemonObject.sprites.front_default
       }" class="pokemon-image" alt="s{pokemonObject.forms[0].name}">
-      <img src="/public/images/poke-gif.gif" class="pokeball" alt="pokeball">
+      <img src="./images/poke-gif.gif" class="pokeball" alt="pokeball">
   <div class="${
     this.element.className
   }__info"> ${pokemonObject.forms[0].name.toUpperCase()}</div>
