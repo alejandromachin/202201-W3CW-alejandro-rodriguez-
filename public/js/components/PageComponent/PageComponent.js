@@ -12,11 +12,11 @@ class PageComponent extends Component {
 
   generateHTML() {
     this.element.innerHTML = `<header class="navigation-container col-12">
+    <img src="./images/heading-logo.png" alt="Pokemon-Logo">
       <div class="navigation">
         <ul class="navigation__menu">
-          <li></li>
-          <li></li>
-          <li></li>
+          <li>HOME</li>
+          <li>MY POKEMONS</li>
         </ul>
       </div>
     </header>
