@@ -52,9 +52,10 @@ class PreviewCardComponent extends Component {
         "button button--add-list",
         () => {
           this.element.querySelector(".pokemon-image").style.opacity = "0";
+          this.element.querySelector(".button--add-list").style.opacity = "0";
+          this.element.querySelector(".button--more-info").style.opacity = "0";
 
-          this.element.querySelector(".poke-card__info:after").style.opacity =
-            "100";
+          this.element.querySelector(".pokeball").style.opacity = "100";
         },
         "CATCH IT"
       );

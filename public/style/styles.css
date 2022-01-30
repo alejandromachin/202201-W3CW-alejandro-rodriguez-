@@ -90,13 +90,10 @@ html {
   align-items: center;
   justify-content: center;
 }
-.poke-card__info:after {
+.pokeball {
   opacity: 0;
   position: absolute;
-  top: -190px;
-  left: -60px;
-
-  content: url("../images/poke-gif.gif");
+  width: 150px;
 }
 .poke-card ul {
   color: #fff;
