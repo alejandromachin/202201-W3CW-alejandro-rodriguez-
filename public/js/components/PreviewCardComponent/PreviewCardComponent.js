@@ -31,6 +31,7 @@ class PreviewCardComponent extends Component {
       this.element.innerHTML = `<img src="${
         pokemonObject.sprites.front_default
       }" class="pokemon-image" alt="s{pokemonObject.forms[0].name}">
+      <img src="/public/images/poke-gif.gif" class="pokeball" alt="pokeball">
   <div class="${
     this.element.className
   }__info"> ${pokemonObject.forms[0].name.toUpperCase()}</div>
@@ -49,7 +50,12 @@ class PreviewCardComponent extends Component {
       new CardButtonComponent(
         buttonContainer,
         "button button--add-list",
-        () => {},
+        () => {
+          this.element.querySelector(".pokemon-image").style.opacity = "0";
+
+          this.element.querySelector(".poke-card__info:after").style.opacity =
+            "100";
+        },
         "CATCH IT"
       );
     })();
