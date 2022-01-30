@@ -90,3 +90,8 @@ html {
   cursor: pointer;
   border: none;
 }
+
+.page-jump {
+  border: 1px solid black;
+  height: 100px;
+}
